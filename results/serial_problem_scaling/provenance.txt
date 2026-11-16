@@ -1,0 +1,36 @@
+Experiment: Serial K-means problem-size scaling
+Date: Sun Nov  8 01:20:02 AM +08 2026
+Host: CN-161
+Compiler:
+g++ (GCC) 13.1.0
+Copyright (C) 2023 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+
+Executable:
+524aae330d667616eb2726c633d6891114c807aae17aef2f77dc22075f791a5e  src/benchmark/kmeans_serial_scaling_O3_20261108
+
+Source:
+7d78e3cf684b29aa282b61e5e9bc5fadc0858557ccac1daeada16bfc4d3aa0c8  src/benchmark/kmeans_serial_fair.cpp
+
+Datasets:
+802650594d6d26c82d6c987f9bd3f48827193a0919afbdf2d4f374d4aad1739a  data/processed/covertype_50000.csv
+52f4d220dd1c3c88eafa66765b7ac1b2eadfaabb20de6eee418300b5467c2c35  data/processed/covertype_100k.csv
+47e5713b37b6d67061a16abbff82f5e7b33f9dd20df17af039468b0904b1e6cf  data/processed/covertype_200000.csv
+752f04afdf3ad91aa47c5d45475f3494c0e5178546c5bb2e93ed560c4109d578  data/processed/covertype_300000.csv
+02d4e2e2b7e6dde53b31c1e20fbdfd1379b37867968344be80d79e29c97abd4d  data/processed/covertype_400000.csv
+70a340dfaf98a058fe09b59b88f33ca536bcee40e47776ecad9dc57847126fb0  data/processed/covertype_500k.csv
+9ae32c080cc944684d4c402f9faab1c8b74d81bd02e044a9be3cfb25e766beea  data/processed/covertype_full.csv
+
+Configuration:
+Algorithm: Serial K-means
+Dimensions: 55
+Clusters: 7
+Initialization seed: 123
+Maximum iterations: 500
+Tolerance: 0.0001
+Warm-up repetitions per size: 1
+Measured repetitions per size: 5
+Timer excludes CSV loading and validation.
+Timer includes centroid initialization, iterations and final SSE.

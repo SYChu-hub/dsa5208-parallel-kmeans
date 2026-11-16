@@ -1,0 +1,29 @@
+# Exclude unsanitised staging documents; publish the *_public versions.
+results/mpi_strong_scaling/mpi8_mpi256_comparison.csv
+results/mpi_weak_scaling_convergence/experiment_notes.md
+results/hybrid_gpu/BENCHMARK_SUMMARY.txt
+
+# Do not publish datasets or generated binaries.
+data/
+*.o
+*.a
+*.so
+*.out
+*.exe
+
+# Exclude local editor and operating-system files.
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*~
+*.swp
+*.swo
+
+# Exclude local Git and temporary files.
+*.tmp
+*.bak
+
+# Exclude CSVs containing internal host or local log-path metadata.
+results/hybrid_covertype/hybrid_covertype_runs.csv
+results/serial_problem_scaling/serial_scaling_runs.csv

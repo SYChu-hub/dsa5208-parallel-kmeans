@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1000" height="650" viewBox="0 0 1000 650">
+<rect width="100%" height="100%" fill="white"/>
+<style>
+  text { font-family: Arial, Helvetica, sans-serif; fill: #222; }
+  .title { font-size: 25px; font-weight: bold; }
+  .subtitle { font-size: 15px; fill: #555; }
+  .axis-label { font-size: 17px; }
+  .tick { font-size: 14px; }
+  .annotation { font-size: 14px; fill: #444; }
+</style>
+
+<text x="500" y="42" text-anchor="middle" class="title">MPI K-means Weak Scaling</text>
+<text x="500" y="70" text-anchor="middle" class="subtitle">10,000 observations per process; 88 fixed iterations</text>
+<line x1="115" y1="525.00" x2="930" y2="525.00" stroke="#dddddd" stroke-width="1"/>
+<text x="103" y="525.00" text-anchor="end" dominant-baseline="middle" class="tick">0.00</text>
+<line x1="115" y1="464.29" x2="930" y2="464.29" stroke="#dddddd" stroke-width="1"/>
+<text x="103" y="464.29" text-anchor="end" dominant-baseline="middle" class="tick">0.01</text>
+<line x1="115" y1="403.57" x2="930" y2="403.57" stroke="#dddddd" stroke-width="1"/>
+<text x="103" y="403.57" text-anchor="end" dominant-baseline="middle" class="tick">0.02</text>
+<line x1="115" y1="342.86" x2="930" y2="342.86" stroke="#dddddd" stroke-width="1"/>
+<text x="103" y="342.86" text-anchor="end" dominant-baseline="middle" class="tick">0.03</text>
+<line x1="115" y1="282.14" x2="930" y2="282.14" stroke="#dddddd" stroke-width="1"/>
+<text x="103" y="282.14" text-anchor="end" dominant-baseline="middle" class="tick">0.04</text>
+<line x1="115" y1="221.43" x2="930" y2="221.43" stroke="#dddddd" stroke-width="1"/>
+<text x="103" y="221.43" text-anchor="end" dominant-baseline="middle" class="tick">0.05</text>
+<line x1="115" y1="160.71" x2="930" y2="160.71" stroke="#dddddd" stroke-width="1"/>
+<text x="103" y="160.71" text-anchor="end" dominant-baseline="middle" class="tick">0.06</text>
+<line x1="115" y1="100.00" x2="930" y2="100.00" stroke="#dddddd" stroke-width="1"/>
+<text x="103" y="100.00" text-anchor="end" dominant-baseline="middle" class="tick">0.07</text>
+<line x1="115" y1="100" x2="115" y2="525" stroke="#222" stroke-width="2"/>
+<line x1="115" y1="525" x2="930" y2="525" stroke="#222" stroke-width="2"/>
+<line x1="115.00" y1="525" x2="115.00" y2="531" stroke="#222"/>
+<text x="115.00" y="552" text-anchor="middle" class="tick">1</text>
+<line x1="278.00" y1="525" x2="278.00" y2="531" stroke="#222"/>
+<text x="278.00" y="552" text-anchor="middle" class="tick">2</text>
+<line x1="441.00" y1="525" x2="441.00" y2="531" stroke="#222"/>
+<text x="441.00" y="552" text-anchor="middle" class="tick">4</text>
+<line x1="604.00" y1="525" x2="604.00" y2="531" stroke="#222"/>
+<text x="604.00" y="552" text-anchor="middle" class="tick">8</text>
+<line x1="767.00" y1="525" x2="767.00" y2="531" stroke="#222"/>
+<text x="767.00" y="552" text-anchor="middle" class="tick">16</text>
+<line x1="930.00" y1="525" x2="930.00" y2="531" stroke="#222"/>
+<text x="930.00" y="552" text-anchor="middle" class="tick">32</text>
+<polyline points="115.00,213.96 278.00,213.02 441.00,202.30 604.00,198.21 767.00,165.48 930.00,150.96" fill="none" stroke="#2463a6" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="115.00" cy="213.96" r="7" fill="#2463a6" stroke="white" stroke-width="2"/>
+<text x="115.00" y="197.96" text-anchor="middle" class="annotation">0.05123</text>
+<circle cx="278.00" cy="213.02" r="7" fill="#2463a6" stroke="white" stroke-width="2"/>
+<text x="278.00" y="197.02" text-anchor="middle" class="annotation">0.05138</text>
+<circle cx="441.00" cy="202.30" r="7" fill="#2463a6" stroke="white" stroke-width="2"/>
+<text x="441.00" y="186.30" text-anchor="middle" class="annotation">0.05315</text>
+<circle cx="604.00" cy="198.21" r="7" fill="#2463a6" stroke="white" stroke-width="2"/>
+<text x="604.00" y="182.21" text-anchor="middle" class="annotation">0.05382</text>
+<circle cx="767.00" cy="165.48" r="7" fill="#2463a6" stroke="white" stroke-width="2"/>
+<text x="767.00" y="149.48" text-anchor="middle" class="annotation">0.05921</text>
+<circle cx="930.00" cy="150.96" r="7" fill="#2463a6" stroke="white" stroke-width="2"/>
+<text x="930.00" y="134.96" text-anchor="middle" class="annotation">0.06161</text>
+<text x="522" y="600" text-anchor="middle" class="axis-label">Number of MPI processes</text>
+<text x="30" y="315" text-anchor="middle" class="axis-label" transform="rotate(-90 30 315)">Median parallel execution time (seconds)</text>
+<text x="500" y="632" text-anchor="middle" class="annotation">Five measured runs per configuration; median reported</text>
+</svg>

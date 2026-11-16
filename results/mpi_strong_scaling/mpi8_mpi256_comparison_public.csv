@@ -1,0 +1,3 @@
+configuration,mpi_ranks,nodes,observations,dimensions,clusters,iterations,converged,sse,computation_time_s,parallel_execution_time_s,computation_speedup_vs_mpi8,computation_runtime_reduction_vs_mpi8_pct,parallel_speedup_vs_mpi8,parallel_runtime_reduction_vs_mpi8_pct
+MPI8,8,1,581012,55,7,88,yes,3841485.42685829,1.687271128,1.785756933,1.0,0.0,1.0,0.0
+MPI256,256,8,581012,55,7,88,yes,3841485.42685831,0.198400102,0.494443958,8.504386393914253,88.24136211972211,3.611646788492054,72.31179961489194

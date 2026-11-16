@@ -1,0 +1,59 @@
+CONTROLLED CPU vs GPU O3 BENCHMARK
+=================================
+
+Benchmark configuration:
+  Dataset: Forest CoverType (full)
+  Observations: 581,012
+  Features: 55
+  Clusters (K): 7
+  Iterations: 88
+  MPI ranks: 1
+  OpenMP threads: 2
+  CPU compiler: NVHPC 26.1, -O3
+  GPU compiler: NVHPC 26.1, -O3, CUDA 12.9, cc86
+  GPU: NVIDIA A40
+
+Measured end-to-end runtimes (seconds):
+
+  Run   CPU O3       GPU O3
+  1     9.554953459  4.691657613
+  2     9.802851424  4.686528673
+  3     9.257541640  4.607949575
+  4     9.392092832  4.620180110
+  5     9.251317926  4.626973504
+
+Summary:
+  CPU mean:             9.4517514562 s
+  CPU median:           9.3920928320 s
+  CPU sample stdev:     0.2320409690 s
+
+  GPU mean:             4.6466578950 s
+  GPU median:           4.6269735040 s
+  GPU sample stdev:     0.0393749160 s
+
+  GPU speedup:          2.03409669 x
+  Runtime reduction:    50.83812861 %
+
+Correctness:
+  All 10 measured runs converged.
+  All runs completed 88 iterations.
+  All runs reported SSE = 3841485.42685823.
+  GPU runs explicitly confirmed:
+    "K-means target executing on GPU device"
+
+Warm-up runs were performed before the five measured CPU/GPU pairs
+and are excluded from the summary statistics.
+
+Interpretation:
+  These are end-to-end application runtimes, not GPU-kernel-only
+  timings. They include the full application execution, including
+  CPU work and data-transfer overheads where applicable.
+
+  This is a controlled comparison using the same full dataset,
+  MPI rank count, OpenMP thread count, and optimisation level.
+  The GPU executable explicitly targets CUDA 12.9 and compute
+  capability 8.6.
+
+Dataset:
+  The original Covertype dataset is not duplicated in this archive.
+  The original Covertype dataset is not included in this repository.

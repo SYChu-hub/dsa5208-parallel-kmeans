@@ -1,0 +1,4 @@
+mpi_ranks,run,iterations,converged,sse,computation_seconds,parallel_execution_seconds
+256,measured_1,88,yes,3841485.42685831,0.224727125,0.535585368
+256,measured_2,88,yes,3841485.42685831,0.212098741,0.533821262
+256,measured_3,88,yes,3841485.42685831,0.218097666,0.508603384

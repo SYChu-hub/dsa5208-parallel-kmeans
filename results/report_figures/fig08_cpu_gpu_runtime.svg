@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="700" viewBox="0 0 1100 700">
+<rect width="100%" height="100%" fill="white"/>
+<text x="550.0" y="42" text-anchor="middle" font-family="Arial" font-size="25" font-weight="bold">CPU versus GPU: End-to-End K-means Runtime</text>
+<text x="550.0" y="72" text-anchor="middle" font-family="Arial" font-size="14" fill="#444">Five paired runs; same dataset and 88 iterations; error bars show sample SD</text>
+<text x="28" y="327.5" transform="rotate(-90 28 327.5)" text-anchor="middle" font-family="Arial" font-size="17">Runtime (seconds)</text>
+<line x1="105" y1="555.0" x2="1035" y2="555.0" stroke="#ddd"/>
+<text x="93" y="560.0" text-anchor="end" font-family="Arial" font-size="13">0.00</text>
+<line x1="105" y1="464.0" x2="1035" y2="464.0" stroke="#ddd"/>
+<text x="93" y="469.0" text-anchor="end" font-family="Arial" font-size="13">2.22</text>
+<line x1="105" y1="373.0" x2="1035" y2="373.0" stroke="#ddd"/>
+<text x="93" y="378.0" text-anchor="end" font-family="Arial" font-size="13">4.43</text>
+<line x1="105" y1="282.0" x2="1035" y2="282.0" stroke="#ddd"/>
+<text x="93" y="287.0" text-anchor="end" font-family="Arial" font-size="13">6.65</text>
+<line x1="105" y1="191.0" x2="1035" y2="191.0" stroke="#ddd"/>
+<text x="93" y="196.0" text-anchor="end" font-family="Arial" font-size="13">8.87</text>
+<line x1="105" y1="100.0" x2="1035" y2="100.0" stroke="#ddd"/>
+<text x="93" y="105.0" text-anchor="end" font-family="Arial" font-size="13">11.08</text>
+<line x1="105" y1="100" x2="105" y2="555" stroke="#222"/>
+<line x1="105" y1="555" x2="1035" y2="555" stroke="#222"/>
+<text x="337.5" y="582" text-anchor="middle" font-family="Arial" font-size="12">CPU O3</text>
+<line x1="337.5" y1="178.9" x2="337.5" y2="159.9" stroke="#2457A6" stroke-width="2"/>
+<line x1="332.5" y1="178.9" x2="342.5" y2="178.9" stroke="#2457A6"/>
+<line x1="332.5" y1="159.9" x2="342.5" y2="159.9" stroke="#2457A6"/>
+<circle cx="337.5" cy="169.4" r="5.5" fill="#2457A6"/>
+<text x="802.5" y="582" text-anchor="middle" font-family="Arial" font-size="12">GPU O3</text>
+<line x1="802.5" y1="366.7" x2="802.5" y2="363.4" stroke="#2457A6" stroke-width="2"/>
+<line x1="797.5" y1="366.7" x2="807.5" y2="366.7" stroke="#2457A6"/>
+<line x1="797.5" y1="363.4" x2="807.5" y2="363.4" stroke="#2457A6"/>
+<circle cx="802.5" cy="365.0" r="5.5" fill="#2457A6"/>
+<circle cx="125" cy="118" r="5" fill="#2457A6"/>
+<text x="137" y="123" font-family="Arial" font-size="13">Median runtime</text>
+</svg>
